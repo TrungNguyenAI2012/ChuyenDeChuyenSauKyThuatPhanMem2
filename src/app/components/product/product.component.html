@@ -1,0 +1,22 @@
+<table class="table">
+    <thead class="bg-info">
+        <tr>
+            <th scope="col">Mã mặt hàng</th>
+            <th scope="col">Tên mặt hàng</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Mô tả</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of datas">
+            <td><a [routerLink]="['/detail', item.maMH]">{{item.maMH}}</a></td>
+            <td>{{item.tenMH}}</td>
+            <td>{{item.soLuong}}</td>
+            <td>{{item.donGia}}</td>
+            <td><a [routerLink]="['/detail', item.maMH]"><img class="img-fluid" height="50" width="50" src="{{item.hinhAnh}}" alt=""></a></td>
+            <td>{{item.moTa}}</td>
+        </tr>
+    </tbody>
+</table>

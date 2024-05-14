@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--Bootstrap 4.6.0 cho Table-->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+
+  <!----------------------------->
+  <title>Perfume Online Shop!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/assets/css/form.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <script src="/assets/js/jquery1.min.js"></script>
+  <!-- start menu -->
+  <link href="/assets/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="/assets/js/megamenu.js"></script>
+  <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+  <!--crollpane-->
+  <script type="text/javascript" src="/assets/js/jquery.jscrollpane.min.js"></script>
+      <script type="text/javascript" id="sourcecode">
+        $(function()
+        {
+          $('.scroll-pane').jScrollPane();
+        });
+      </script>
+  <!-- start details -->
+  <script src="/assets/js/slides.min.jquery.js"></script>
+     <script>
+      $(function(){
+        $('#products').slides({
+          preload: true,
+          preloadImage: 'img/loading.gif',
+          effect: 'slide, fade',
+          crossfade: true,
+          slideSpeed: 350,
+          fadeSpeed: 500,
+          generateNextPrev: true,
+          generatePagination: false
+        });
+      });
+    </script>
+  <link rel="stylesheet" href="/assets/css/etalage.css">
+  <script src="/assets/js/jquery.etalage.min.js"></script>
+  <script>
+        jQuery(document).ready(function($){
+          $('#etalage').etalage({
+            thumb_image_width: 360,
+            thumb_image_height: 360,
+            source_image_width: 900,
+            source_image_height: 900,
+            show_hint: true,
+            click_callback: function(image_anchor, instance_id){
+              alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+            }
+          });
+        });
+  </script>
+    <!--start slider -->
+        <link rel="stylesheet" href="/assets/css/fwslider.css" media="all">
+        <script src="/assets/js/jquery-ui.min.js"></script>
+        <script src="/assets/js/css3-mediaqueries.js"></script>
+        <script src="/assets/js/fwslider.js"></script>
+    <!--end slider -->
+    <script src="/assets/js/jquery.easydropdown.js"></script>
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+</html>

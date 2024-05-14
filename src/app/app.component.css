@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    font-weight: bold;
+}
+table{
+    border: 2px;
+    border-radius: 5em;
+}
+
+.thead tr{
+    background: thistle;
+    font-size: 25px;
+    font-weight: bold;
+    color: seagreen;
+}
